@@ -27,7 +27,7 @@ class MakeUpViewModel: ViewModel() {
                 _listeyeshadow.value = MakeUpApi.retrofitServiceApi.getDataEyeshadow("https://makeup-api.herokuapp.com/api/v1/products.json?product_type=eyeshadow")
                 Log.d("berhasil", _listeyeshadow.value.toString())
             } catch (e: Exception){
-                Log.d("error", e.printStackTrace().toString())
+                Log.d("error", e.stackTraceToString())
             }
         }
     }
