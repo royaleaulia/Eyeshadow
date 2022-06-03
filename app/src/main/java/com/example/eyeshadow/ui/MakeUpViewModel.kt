@@ -32,7 +32,7 @@ class MakeUpViewModel: ViewModel() {
         }
     }
 
-    fun onEyeshadowClicked(Eyeshadow: Eyeshadow){
-        _eyeshadow.value = Eyeshadow
+    fun onEyeshadowClicked(eyeshadow: Eyeshadow){
+        _eyeshadow.value = eyeshadow
     }
 }
